@@ -1,0 +1,426 @@
+{
+    "Project_Name": {
+        "field_name": "Project_Name",
+        "field_name_with_param_prefix": "--context_param Project_Name=",
+        "field_display_name": "Project Name",
+        "field_type": "String",
+        "field_help_text": "Name of the project/Top level folder",
+        "field_is_required": "false",
+        "field_default_value": "$JOB_ID"
+    },
+    "Local_Base_Output_Directory": {
+        "field_name": "Local_Base_Output_Directory",
+        "field_name_with_param_prefix": "--context_param Local_Base_Output_Directory=",
+        "field_display_name": "Local Base Output Directory",
+        "field_type": "String",
+        "field_help_text": "Temporary path for output file",
+        "field_is_required": "false",
+        "field_default_value": "/Users/Shared/talend/out"
+    },
+    "Catalog_Srcfiles_Path": {
+        "field_name": "Catalog_Srcfiles_Path",
+        "field_name_with_param_prefix": "--context_param Catalog_Srcfiles_Path=",
+        "field_display_name": "Catalog Srcfiles Path",
+        "field_type": "File",
+        "field_help_text": "Source file catalog.json location",
+        "field_is_required": "false",
+        "field_default_value": ""
+    },
+    "Manifest_Srcfiles_Path": {
+        "field_name": "Manifest_Srcfiles_Path",
+        "field_name_with_param_prefix": "--context_param Manifest_Srcfiles_Path=",
+        "field_display_name": "Manifest Srcfiles Path",
+        "field_type": "File",
+        "field_help_text": "Source file  manifest.json location",
+        "field_is_required": "false",
+        "field_default_value": "mnt/DBT/test_dbt/srcfiles/manifest.json"
+    },
+    "Run_Result_Path": {
+        "field_name": "Run_Result_Path",
+        "field_name_with_param_prefix": "--context_param Run_Result_Path=",
+        "field_display_name": "Run Result Path",
+        "field_type": "File",
+        "field_help_text": "Source file  runresult.json location",
+        "field_is_required": "false",
+        "field_default_value": "mnt/DBT/test_dbt/srcfiles/run_results.json"
+    },
+    "Community": {
+        "field_name": "Community",
+        "field_name_with_param_prefix": "--context_param Community=",
+        "field_display_name": "Community",
+        "field_type": "String",
+        "field_help_text": "Collibra Community",
+        "field_is_required": "false",
+        "field_default_value": "Heather's Sandbox"
+    },
+    "Curl_Path": {
+        "field_name": "Curl_Path",
+        "field_name_with_param_prefix": "--context_param Curl_Path=",
+        "field_display_name": "Curl Path",
+        "field_type": "String",
+        "field_help_text": "curl path",
+        "field_is_required": "false",
+        "field_default_value": "/curl/bin"
+    },
+    "Data_Source": {
+        "field_name": "Data_Source",
+        "field_name_with_param_prefix": "--context_param Data_Source=",
+        "field_display_name": "Data Source",
+        "field_type": "String",
+        "field_help_text": "Collibra Data_Source",
+        "field_is_required": "false",
+        "field_default_value": "DBT"
+    },
+    "Database_Asset_Type": {
+        "field_name": "Database_Asset_Type",
+        "field_name_with_param_prefix": "--context_param Database_Asset_Type=",
+        "field_display_name": "Database Asset Type",
+        "field_type": "String",
+        "field_help_text": "Collibra Database_AssetType",
+        "field_is_required": "false",
+        "field_default_value": "Database"
+    },
+    "Database_Domain": {
+        "field_name": "Database_Domain",
+        "field_name_with_param_prefix": "--context_param Database_Domain=",
+        "field_display_name": "Database Domain",
+        "field_type": "String",
+        "field_help_text": "Collibra Database_Domain",
+        "field_is_required": "false",
+        "field_default_value": "Servers and Databases"
+    },
+    "Database_Domain_Type": {
+        "field_name": "Database_Domain_Type",
+        "field_name_with_param_prefix": "--context_param Database_Domain_Type=",
+        "field_display_name": "Database Domain Type",
+        "field_type": "String",
+        "field_help_text": "Collibra Database_Domain_Type",
+        "field_is_required": "false",
+        "field_default_value": "DBT Demo Tech"
+    },
+    "DBT_Community": {
+        "field_name": "DBT_Community",
+        "field_name_with_param_prefix": "--context_param DBT_Community=",
+        "field_display_name": "DBT Community",
+        "field_type": "String",
+        "field_help_text": "Collibra DBT_Community",
+        "field_is_required": "false",
+        "field_default_value": "DBT"
+    },
+    "DBT_Domain": {
+        "field_name": "DBT_Domain",
+        "field_name_with_param_prefix": "--context_param DBT_Domain=",
+        "field_display_name": "DBT Domain",
+        "field_type": "String",
+        "field_help_text": "Collibra DBT_Domain",
+        "field_is_required": "false",
+        "field_default_value": "ELT Metadata"
+    },
+    "DBT_Runtime_Domain": {
+        "field_name": "DBT_Runtime_Domain",
+        "field_name_with_param_prefix": "--context_param DBT_Runtime_Domain=",
+        "field_display_name": "DBT Runtime Domain",
+        "field_type": "String",
+        "field_help_text": "Collibra DBT_Runtime_Domain",
+        "field_is_required": "false",
+        "field_default_value": "Runtime Metadata"
+    },
+    "Domain": {
+        "field_name": "Domain",
+        "field_name_with_param_prefix": "--context_param Domain=",
+        "field_display_name": "Domain",
+        "field_type": "String",
+        "field_help_text": "Collibra Domain",
+        "field_is_required": "false",
+        "field_default_value": "DBT Physical Assets"
+    },
+    "Domain_Type": {
+        "field_name": "Domain_Type",
+        "field_name_with_param_prefix": "--context_param Domain_Type=",
+        "field_display_name": "Domain Type",
+        "field_type": "String",
+        "field_help_text": "Collibra Domain_Type",
+        "field_is_required": "false",
+        "field_default_value": "Physical Data Dictionary"
+    },
+    "Job_Domain_Type": {
+        "field_name": "Job_Domain_Type",
+        "field_name_with_param_prefix": "--context_param Job_Domain_Type=",
+        "field_display_name": "Job Domain Type",
+        "field_type": "String",
+        "field_help_text": "Collibra Job_Domain_type",
+        "field_is_required": "false",
+        "field_default_value": "Data Asset Domain"
+    },
+    "Macro_Asset_Type": {
+        "field_name": "Macro_Asset_Type",
+        "field_name_with_param_prefix": "--context_param Macro_Asset_Type=",
+        "field_display_name": "Macro Asset Type",
+        "field_type": "String",
+        "field_help_text": "Collibra Macro_AssetType",
+        "field_is_required": "false",
+        "field_default_value": "ELT Macro"
+    },
+    "Model_Asset_Type": {
+        "field_name": "Model_Asset_Type",
+        "field_name_with_param_prefix": "--context_param Model_Asset_Type=",
+        "field_display_name": "Model Asset Type",
+        "field_type": "String",
+        "field_help_text": "Collibra Model_AssetType",
+        "field_is_required": "false",
+        "field_default_value": "ELT Model"
+    },
+    "Run_Result_Asset_Type": {
+        "field_name": "Run_Result_Asset_Type",
+        "field_name_with_param_prefix": "--context_param Run_Result_Asset_Type=",
+        "field_display_name": "Run Result Asset Type",
+        "field_type": "String",
+        "field_help_text": "Collibra Run_result_AssetType",
+        "field_is_required": "false",
+        "field_default_value": "ELT Run Result"
+    },
+    "Schema_Community": {
+        "field_name": "Schema_Community",
+        "field_name_with_param_prefix": "--context_param Schema_Community=",
+        "field_display_name": "Schema Community",
+        "field_type": "String",
+        "field_help_text": "Collibra Schema_Community",
+        "field_is_required": "false",
+        "field_default_value": "Schemas"
+    },
+    "Schema_Domain": {
+        "field_name": "Schema_Domain",
+        "field_name_with_param_prefix": "--context_param Schema_Domain=",
+        "field_display_name": "Schema Domain",
+        "field_type": "String",
+        "field_help_text": "Collibra SchemaDomain",
+        "field_is_required": "false",
+        "field_default_value": "DBT Physcial Assets"
+    },
+    "Collibra_Config": {
+        "field_name": "Collibra_Config",
+        "field_name_with_param_prefix": "--context_param Collibra_Config=",
+        "field_display_name": "Collibra Config",
+        "field_type": "String",
+        "field_help_text": "",
+        "field_is_required": "false",
+        "field_default_value": ""
+    },
+    "Table_Full_Name": {
+        "field_name": "Table_Full_Name",
+        "field_name_with_param_prefix": "--context_param Table_Full_Name=",
+        "field_display_name": "Table Full Name",
+        "field_type": "Boolean",
+        "field_help_text": "",
+        "field_is_required": "false",
+        "field_default_value": ""
+    },
+    "Schema_Full_Name_Check": {
+        "field_name": "Schema_Full_Name_Check",
+        "field_name_with_param_prefix": "--context_param Schema_Full_Name_Check=",
+        "field_display_name": "Schema Full Name Check",
+        "field_type": "Boolean",
+        "field_help_text": "",
+        "field_is_required": "false",
+        "field_default_value": "true"
+    },
+    "Database_Full_Name": {
+        "field_name": "Database_Full_Name",
+        "field_name_with_param_prefix": "--context_param Database_Full_Name=",
+        "field_display_name": "Database Full Name",
+        "field_type": "String",
+        "field_help_text": "Default database name",
+        "field_is_required": "false",
+        "field_default_value": "DEV_RAW"
+    },
+    "Collibra_System_Name": {
+        "field_name": "Collibra_System_Name",
+        "field_name_with_param_prefix": "--context_param Collibra_System_Name=",
+        "field_display_name": "Collibra System Name",
+        "field_type": "String",
+        "field_help_text": "Collibra collibraSystemName",
+        "field_is_required": "false",
+        "field_default_value": "Snowflake"
+    },
+    "Publish_To_Collibra": {
+        "field_name": "Publish_To_Collibra",
+        "field_name_with_param_prefix": "--context_param Publish_To_Collibra=",
+        "field_display_name": "Publish To Collibra",
+        "field_type": "Boolean",
+        "field_help_text": "Do you want to upload to Collibra?",
+        "field_is_required": "false",
+        "field_default_value": "false"
+    },
+    "Publish_To_Graph": {
+        "field_name": "Publish_To_Graph",
+        "field_name_with_param_prefix": "--context_param Publish_To_Graph=",
+        "field_display_name": "Publish To Graph",
+        "field_type": "Boolean",
+        "field_help_text": "Do you want to upload to Neo4j?",
+        "field_is_required": "false",
+        "field_default_value": "false"
+    },
+    "Neo4j_Bin_Path": {
+        "field_name": "Neo4j_Bin_Path",
+        "field_name_with_param_prefix": "--context_param Neo4j_Bin_Path=",
+        "field_display_name": "Neo4j Bin Path",
+        "field_type": "String",
+        "field_help_text": "Neo4j Bin Path?",
+        "field_is_required": "false",
+        "field_default_value": ""
+    },
+    "Collibra_Model_Zip": {
+        "field_name": "Collibra_Model_Zip",
+        "field_name_with_param_prefix": "--context_param Collibra_Model_Zip=",
+        "field_display_name": "Collibra Model Zip",
+        "field_type": "Resource",
+        "field_help_text": "Collibra Resource - CollibraModels",
+        "field_is_required": "false",
+        "field_default_value": "_bzjloLOsEe2r9O0cZYpReA|Latest"
+    },
+    "Collibra_Jar_Zip": {
+        "field_name": "Collibra_Jar_Zip",
+        "field_name_with_param_prefix": "--context_param Collibra_Jar_Zip=",
+        "field_display_name": "Collibra Jar Zip",
+        "field_type": "Resource",
+        "field_help_text": "Collibra Resource - collibra-import.jar",
+        "field_is_required": "false",
+        "field_default_value": "_OOiPgLOuEe2r9O0cZYpReA|Latest"
+    },
+    "Lineage_Harvester_Zip": {
+        "field_name": "Lineage_Harvester_Zip",
+        "field_name_with_param_prefix": "--context_param Lineage_Harvester_Zip=",
+        "field_display_name": "Lineage Harvester Zip",
+        "field_type": "Resource",
+        "field_help_text": "Collibra Resource - Lineage_harvester_zip",
+        "field_is_required": "false",
+        "field_default_value": "_FK9pEDVxEe261vIZXMSAfA|Latest"
+    },
+    "Company_Name": {
+        "field_name": "Company_Name",
+        "field_name_with_param_prefix": "--context_param Company_Name=",
+        "field_display_name": "Company Name",
+        "field_type": "String",
+        "field_help_text": "company_name for base model of Neo4j",
+        "field_is_required": "false",
+        "field_default_value": "eon"
+    },
+    "Platform": {
+        "field_name": "Platform",
+        "field_name_with_param_prefix": "--context_param Platform=",
+        "field_display_name": "Platform",
+        "field_type": "String",
+        "field_help_text": "plateform for base model of Neo4j",
+        "field_is_required": "false",
+        "field_default_value": "caspian"
+    },
+    "Capability": {
+        "field_name": "Capability",
+        "field_name_with_param_prefix": "--context_param Capability=",
+        "field_display_name": "Capability",
+        "field_type": "String",
+        "field_help_text": "capability for base model of Neo4j",
+        "field_is_required": "false",
+        "field_default_value": "data tools"
+    },
+    "Technology": {
+        "field_name": "Technology",
+        "field_name_with_param_prefix": "--context_param Technology=",
+        "field_display_name": "Technology",
+        "field_type": "String",
+        "field_help_text": "technology for base model of Neo4j",
+        "field_is_required": "false",
+        "field_default_value": "dbt"
+    },
+    "Artifact_frm_API": {
+        "field_name": "Artifact_frm_API",
+        "field_name_with_param_prefix": "--context_param Artifact_frm_API=",
+        "field_display_name": "Artifact frm API",
+        "field_type": "Boolean",
+        "field_help_text": "Do you want to load the source file from the DBT API?",
+        "field_is_required": "false",
+        "field_default_value": "false"
+    },
+    "DBT_Account_Id": {
+        "field_name": "DBT_Account_Id",
+        "field_name_with_param_prefix": "--context_param DBT_Account_Id=",
+        "field_display_name": "DBT Account Id",
+        "field_type": "String",
+        "field_help_text": "DBT Account ID",
+        "field_is_required": "false",
+        "field_default_value": "22481"
+    },
+    "DBT_API_Auth_Token": {
+        "field_name": "DBT_API_Auth_Token",
+        "field_name_with_param_prefix": "--context_param DBT_API_Auth_Token=",
+        "field_display_name": "DBT API Auth Token",
+        "field_type": "Password",
+        "field_help_text": "DBT API Token",
+        "field_is_required": "false",
+        "field_default_value": "enc:system.encryption.key.v1:qxZL2pfTlA/gXMwy1NbZHP+9UIZcEg21ll3SdR18o9M5yNLp2Wkr/ZCDsZiYT6cmxwn/R9z+vu+53lcjx+kwwnT3thi8DvzZ1lY="
+    },
+    "DBT_API_Content_Type": {
+        "field_name": "DBT_API_Content_Type",
+        "field_name_with_param_prefix": "--context_param DBT_API_Content_Type=",
+        "field_display_name": "DBT API Content Type",
+        "field_type": "String",
+        "field_help_text": "DBT Application content type",
+        "field_is_required": "false",
+        "field_default_value": "application/json"
+    },
+    "Field_Name_Select": {
+        "field_name": "Field_Name_Select",
+        "field_name_with_param_prefix": "--context_param Field_Name_Select=",
+        "field_display_name": "Field Name (Select)",
+        "field_type": "Select",
+        "field_help_text": "Select an option from a predefined list",
+        "field_is_required": "false",
+        "field_default_value": "Option1",
+        "field_options": [
+            {
+                "value": "option-1",
+                "label": "Option 1"
+            },
+            {
+                "value": "option-2",
+                "label": "Option 2"
+            },
+            {
+                "value": "option-3",
+                "label": "Option 3"
+            }
+        ]
+    },
+    "Field_Name_Radio": {
+        "field_name": "Field_Name_Radio",
+        "field_name_with_param_prefix": "--context_param Field_Name_Radio=",
+        "field_display_name": "Field Name (Radio)",
+        "field_type": "Radio",
+        "field_help_text": "Select an option from a predefined list using radio buttons",
+        "field_is_required": "true",
+        "field_default_value": "Option1",
+        "field_options": [
+            {
+                "value": "option-1",
+                "label": "Option 1"
+            },
+            {
+                "value": "option-2",
+                "label": "Option 2"
+            },
+            {
+                "value": "option-3",
+                "label": "Option 3"
+            }
+        ]
+    },
+    "Field_Name_Int": {
+        "field_name": "Field_Name_Int",
+        "field_name_with_param_prefix": "--context_param Field_Name_Int=",
+        "field_display_name": "Field Name (Integer)",
+        "field_type": "Int",
+        "field_help_text": "Enter an integer value",
+        "field_is_required": "false",
+        "field_default_value": 0
+    }       
+}
